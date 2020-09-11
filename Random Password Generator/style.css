@@ -1,0 +1,103 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'consolas';
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f8f8f8;
+}
+
+.inputBox
+{
+    position: relative;
+    width: 450px;
+}
+
+.inputBox h2
+{
+    font-size: 28px;
+    color: #333;
+}
+
+.inputBox input
+{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    margin: 15px 0 20px;
+    background: transparent;
+    padding: 0 20px;
+    font-size: 24px;
+    outline: none;
+    letter-spacing: 4px;
+    box-sizing: border-box;
+    color: #333;
+    border-radius: 8px;
+    border: none;
+    box-shadow: -4px -4px 10px rgba(255,255,255,1),
+    inset 4px 4px 10px rgba(0,0,0,0.06),
+    inset -4px -4px 10px rgba(255,255,255,1),
+     4px 4px 10px rgba(0,0,0,0.06);
+}
+
+.inputBox input::placeholder
+{
+    letter-spacing: 0px;
+}
+
+.inputBox #btn
+{
+    position: relative;
+    cursor: pointer;
+    color: #fff;
+    background: #333;
+    font-size: 24px;
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+.inputBox #btn:active
+{
+    background: #9c27b0;
+}
+
+footer
+{
+    position: absolute;
+    bottom: 0%;
+    padding: 2rem 0rem;
+    color: rgb(22, 20, 20);
+    background: transparent;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width:823px){
+    .inputBox
+    {
+        width: 90%;
+        margin: auto;
+    }
+
+    footer
+    {
+        width: 90%;
+        font-size: 12px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 570px){
+    footer
+    {
+        font-size: 10px;
+    }
+}
